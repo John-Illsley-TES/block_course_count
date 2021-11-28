@@ -1,0 +1,1 @@
+A block that shows the current count of active courses in Moodle.
