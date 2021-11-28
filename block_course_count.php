@@ -42,7 +42,6 @@ class block_course_count extends block_base {
     }
 
     public function get_content() {
-        global $USER, $CFG, $DB;
 
         if ($this->content !== null) {
             return $this->content;
@@ -60,8 +59,7 @@ class block_course_count extends block_base {
                 ? $blockconfig->config_view
                 : BLOCK_COURSE_COUNT_DEFAULT_VIEW;
         }
-        print_r($blockconfig);
-        print_r($this->config); // This.
+
         // Create empty content.
         $this->content = new stdClass();
 
