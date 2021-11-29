@@ -31,6 +31,10 @@ class block_course_count extends block_base {
         return true;
     }
 
+    public function can_uninstall_plugin() {
+        return true;
+    }
+    
     public function applicable_formats() {
         return array(
             'admin' => false,
